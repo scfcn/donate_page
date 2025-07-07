@@ -26,10 +26,10 @@ export interface SiteConfig {
 // 网站配置
 // 您可以在这里自定义网站的基本信息
 export const siteConfig: SiteConfig = {
-  title: "赞助给 AcoFork",
-  description: "赞助给 AcoFork - 支持多种支付方式的统一收款界面",
-  favicon: "https://q2.qlogo.cn/headimg_dl?dst_uin=2726730791&spec=5", // 可以替换为您的图标路径
-  pageTitle: "赞助给 AcoFork",
+  title: "青序栈|赞助页-筱序二十",
+  description: "赞助给 青序栈·筱序二十 - 支持支付宝、微信主流赞助方式，为爱发电！",
+  favicon: "https://q.qlogo.cn/headimg_dl?dst_uin=2907713872&spec=5", // 可以替换为您的图标路径
+  pageTitle: "赞助给 青序栈-筱序二十",
   pageDescription: "请选择您的赞助方式",
   thankYouText: "感谢您的赞助！如果您赞助后留下了个人信息，我们将会将您公布在赞助列表中。",
   enableThemeToggle: true, // 启用主题切换按钮
@@ -53,24 +53,6 @@ export const paymentConfig: PaymentMethodConfig[] = [
     description: "请使用微信扫码赞助",
     type: "qrcode",
     qrCodeUrl: "/wechat.svg", // 替换为您的微信收款码路径
-    enabled: true
-  },
-  {
-    id: "usdt",
-    name: "加密货币",
-    description: "如需赞助，请发送USDT到下述钱包地址。仅支持如下链：AVAXCHAIN、ERC20、BEP20。请勿向当前地址进行任何非 USDT 的发送或者使用不支持的链发送。",
-    type: "address",
-    address: "0xe2bacffb78145af2e8d8fe3e28073badb7e9e56c", // 替换为您的USDT钱包地址
-    enabled: true
-  },
-  {
-    id: "bankcard",
-    name: "境内汇款",
-    description: "请使用境内银行卡转账赞助",
-    type: "bankcard",
-    bankCardNumber: "6217211302009309146", // 替换为您的银行卡号
-    bankName: "中国工商银行", // 替换为您的银行名称
-    accountName: "胡丁", // 替换为您的账户名
     enabled: true
   }
 ]
